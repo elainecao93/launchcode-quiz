@@ -14,8 +14,8 @@ public class MultipleChoiceQuestion extends Question {
     @Override
     public String getPrompt() {
         String output = question + "\n";
-        for(String elem : answers)
-            output += elem + "\n";
+        for(int i=0; i< answers.size(); i++)
+            output += i + ": " + answers.get(1) + "\n";
         return output;
     }
 

@@ -22,7 +22,7 @@ public class TrueFalseQuestion extends Question {
         if (isTrue && answer.equals("true"))
             return true;
         if (!isTrue && answer.equals("false"))
-            return false;
+            return true;
         throw new IllegalAnswerException();
     }
 }
