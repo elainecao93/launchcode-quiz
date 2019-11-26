@@ -2,19 +2,18 @@ package com.github.elainecao93;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public class MultipleAnswerQuestion extends Question {
     String question;
     ArrayList<String> answers;
     ArrayList<Integer> correctAnswers;
-
-    //TODO bugs in this code: should check to see if correctAnswers has duplicates, and see if the answer has duplicate answers.
-
+    
     public MultipleAnswerQuestion(String question, ArrayList<String> answers, ArrayList<Integer> correctAnswers) {
         this.question = question;
         this.answers = answers;
-        this.correctAnswers = correctAnswers;
+        this.correctAnswers = new ArrayList<>(new HashSet(correctAnswers));
     }
 
     @Override
@@ -30,7 +29,7 @@ public class MultipleAnswerQuestion extends Question {
      */
     @Override
     public Boolean queryForResponse(String answer) {
-        List<String> answers = Arrays.asList(answer.split(","));
+        List<String> answers = new ArrayList<>(new HashSet(Arrays.asList(answer.split(","))));
         for (String elem : answers) {
             try {
                 Integer thisElem = Integer.parseInt(elem);

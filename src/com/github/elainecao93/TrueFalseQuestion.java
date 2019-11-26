@@ -19,10 +19,17 @@ public class TrueFalseQuestion extends Question {
 
     @Override
     public Boolean queryForResponse(String answer) {
-        if (isTrue && answer.equals("true"))
-            return true;
-        if (!isTrue && answer.equals("false"))
-            return true;
+        if (isTrue) {
+            if (answer.equals("true"))
+                return true;
+            if (answer.equals("false"))
+                return false;
+        } else {
+            if (answer.equals("false"))
+                return true;
+            if (answer.equals("true"))
+                return false;
+        }
         throw new IllegalAnswerException();
     }
 }

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bccfade-b9ec-49fe-bc01-dfa3fc007018" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/elainecao93/IllegalAnswerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/elainecao93/IllegalAnswerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/elainecao93/MultipleAnswerQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/elainecao93/MultipleAnswerQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/elainecao93/MultipleChoiceQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/elainecao93/MultipleChoiceQuestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/elainecao93/TrueFalseQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/elainecao93/TrueFalseQuestion.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574730716688</updated>
-      <workItem from="1574730718329" duration="2425000" />
+      <workItem from="1574730718329" duration="2690000" />
     </task>
     <servers />
   </component>
